@@ -1,0 +1,121 @@
+body {
+    font-family: 'Sohne-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1e1e1e, #272727);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-family: 'Sohne-Bold', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #464646;
+    transition: background-color 0.3s ease;
+    font-family: 'Sohne-Regular', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #606060;
+}
+
+.section {
+    padding: 20px;
+    background-color: #2c2c2c;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 1s ease;
+}
+
+.section h2 {
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Sohne-Bold', sans-serif;
+}
+
+.section p {
+    color: #ccc;
+    font-family: 'Sohne-Regular', sans-serif;
+}
+
+footer {
+    background: linear-gradient(135deg, #1e1e1e, #272727);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Background Image */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e1e1e, #272727);
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
